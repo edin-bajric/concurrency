@@ -49,6 +49,7 @@ int main(){
     pthread_t host_thread;
     pthread_t guest_threads[100];
 
+    printf("Enter the number of guests(MAX 100): \n");
     scanf("%d", &N);
 
     Pthread_create(&host_thread, NULL, &host, NULL);
